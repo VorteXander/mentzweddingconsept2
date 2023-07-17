@@ -14,6 +14,11 @@ html {
   src: url(Fonts/Poppy\ Shower.ttf);
 }
 
+@font-face {
+  font-family: "silenter";
+  src: url(Fonts/Silenter.ttf);
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -50,7 +55,6 @@ html {
   }
 }
 
-
 /* Header - Mone de Jager and F-J Mentz */
 
 .heading-Lovers-grid {
@@ -63,9 +67,7 @@ html {
 #container1 {
   display: flex;
   justify-content: center;
-
 }
-
 
 #heading-column1 {
   text-align: right;
@@ -73,6 +75,7 @@ html {
   opacity: 0;
   animation: slideInLeft 1s ease-in forwards;
   font-family: "poppy-shower";
+  font-weight: lighter;
 }
 
 #heading-column2 {
@@ -81,6 +84,7 @@ html {
   opacity: 0;
   animation: slideInRight 1s ease-in forwards;
   font-family: "poppy-shower";
+  font-weight: lighter;
 }
 
 .heading-surname {
@@ -92,68 +96,21 @@ html {
   color: darkgoldenrod;
   text-align: center;
   font-family: "poppy-shower";
-
 }
-
-/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-/* bubbles */
-
-
-
-.container-bubbles {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  z-index: +100;
-
-}
-
-.bubbles {
-  position: relative;
-  display: flex;
-
-}
-
-.bubbles span {
-  position: relative;
-  width: 5px;
-  height: 5px;
-  background: darkgoldenrod;
-  margin: 0 4px;
-  border-radius: 100%;
-  box-shadow: 0 0 0 1px gold, 0 0 5px gold, 0 0 10px gold;
-  animation: animate 15s linear infinite;
-  animation-duration: calc(250s / var(--i));
-}
-
-.bubbles span :nth-child(even) {
-  background: goldenrod;
-  box-shadow: 0 0 0 10px gold, 0 0 50px gold, 0 0 100px gold;
-}
-
-@keyframes animate {
-  0% {
-    transform: translateY(200vh) scale(0);
-  }
-
-  100% {
-    transform: translateY(-10vh) scale(1);
-    opacity: 0.2;
-  }
-}
-
 
 /* ------------------------------------------------------------------------------------------------------------------------ */
 
 /* Menu */
 
-#container2 {
+.container2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
-
+.container2-dimmer {
+  background-color: rgb(0, 0, 0, 0.5);
+  color: white;
 }
 
 /* Navbar visibility while scrolling */
@@ -163,12 +120,10 @@ html {
   width: 100%;
   padding: 10px;
   transition-duration: 0.5s;
-  z-index: +999999;
 }
 
 .nav-bar.visible {
   top: 0;
-
 }
 
 .menu-grid {
@@ -176,9 +131,10 @@ html {
   justify-content: center;
   gap: 70px;
   font-size: 15px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   list-style-type: none;
   padding-bottom: 2%;
+  z-index: 10;
 }
 
 .nav-bar {
@@ -196,7 +152,6 @@ html {
   color: darkgoldenrod;
   padding-left: 10px;
   padding-right: 10px;
-
 }
 
 /* Hover animation */
@@ -209,7 +164,6 @@ html {
   border-radius: 10px;
   transform: scale(1.1);
   transition-duration: 0.2s;
-
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------ */
@@ -228,12 +182,32 @@ html {
   height: 700px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
   text-shadow: 1px 1px 1px #000;
   font-size: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.reg-items-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.reg-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.reg-titlep {
+  align-self: center;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+.second-heading-MentzToBe {
+  font-size: 21.5px;
 }
 
 #reg-buttonb {
@@ -286,18 +260,15 @@ html {
   background: goldenrod;
 }
 
-
 .reg-locationp {
   color: white;
   /* font-family: 'Great Vibes', cursive; */
   font-size: 20px;
-
 }
 
 .reg-items-container {
   opacity: 0;
   animation: fadeIn 1s ease-in forwards;
-
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------ */
@@ -305,11 +276,10 @@ html {
 /* Countdown */
 
 #countdown-grid {
-
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  font-family: "poppy-shower";
-  gap: 150px
+  font-family: silenter;
+  gap: 150px;
 }
 
 #countdown-container {
@@ -320,10 +290,8 @@ html {
   align-items: center;
 }
 
-
-
 .countdown-columns {
-  font-size: 30px;
+  font-size: 20px;
   color: white;
   background-color: rgb(126, 92, 8);
   height: 130px;
@@ -332,83 +300,6 @@ html {
   text-align: center;
   padding-top: 25px;
   box-shadow: 0px 10px 10px black;
-}
-
-/* ------------------------------------------------------------------------------------------------------------------------ */
-
-/* Couple Info */
-
-#containerBackground {
-  /* background-image: url(Pictures/gold\ texture.jpg); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 10%;
-}
-
-#getToKnowUsHeading {
-  text-align: center;
-  font-family: "poppy-shower";
-  font-size: 400%;
-  font-weight: lighter;
-}
-
-#coupleInfoHeading {
-  display: flex;
-  justify-content: center;
-
-}
-
-.coupleStory {
-  width: 40%;
-  padding: 5%;
-  width: 50%;
-}
-
-.moneInfo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 15%;
-
-}
-
-#container3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.couple-info-grid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* couple info images */
-.Couple-Info-Face-image {
-  width: 150px;
-  height: 150px;
-  border-radius: 100%;
-  border: solid darkgoldenrod 3px;
-}
-
-/* couple info heading names */
-
-.couple-info-heading {
-  padding-top: 15px;
-  font-size: 40px;
-  font-family: "poppy-shower";
-
-
-}
-
-/* Couple info paragraph */
-.couple-info-paragraph {
-
-  font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------ */
@@ -423,8 +314,7 @@ html {
 #sheSaidYes-slogan {
   background-color: rgb(99, 72, 6);
   text-align: center;
-
-  height: 150px;
+  height: 180px;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -434,7 +324,7 @@ html {
 
 #sheSaidYes {
   color: white;
-  font-size: 40px;
+  font-size: 45px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
 }
@@ -444,6 +334,7 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
   font-size: 12px;
+  font-weight: lighter;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------ */
@@ -454,19 +345,20 @@ html {
   display: flex;
   align-content: center;
   justify-content: center;
-
 }
 
 #our-story-heading {
-  font-size: 35px;
-  font-family: "poppy-shower";
+  font-size: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  text-align: left;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 #our-story-section {
-
   width: 500px;
   margin: 2%;
-  text-align: center;
 }
 
 #story-picture {
@@ -478,16 +370,72 @@ html {
   color: #000;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
+  text-align: left;
+}
+/* ------------------------------------------------------------------------------------------------------------------------ */
+/* Information */
+.information {
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+.information-text1 {
+  font-size: 30px;
+  font-family: silenter;
+  font-weight: bolder;
+  /* color: darkgoldenrod; */
 }
 
+.information-text2 {
+  font-size: 15px;
+  font-family: sans-serif;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.bank-details {
+  text-align: left;
+  margin-bottom: 10%;
+  font-weight: bolder;
+}
+
+.guesthouses {
+  text-align: left;
+}
+
+.link-highlight {
+  color: darkgoldenrod;
+}
 
 /* ------------------------------------------------------------------------------------------------------------------------ */
 /* Gallery */
 
 .gallery-heading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-heading {
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   margin-top: 5%;
+  width: 1075px;
+  background-color: rgb(99, 72, 6);
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-heading-text {
+  color: white;
+  font-size: 45px;
+  font-weight: lighter;
 }
 
 #gallery-heading-paragraph {
@@ -495,19 +443,6 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   margin: 1%;
-}
-
-#dimmer {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-
-  display: none;
-  z-index: 10000;
-
 }
 
 .med-img {
@@ -527,7 +462,6 @@ html {
   justify-content: center;
   align-items: center;
   margin-top: 5%;
-  /* background-image: url(Pictures/Gallery\ Background.jpg); */
   background-size: cover;
   width: 1075px;
 }
@@ -535,7 +469,6 @@ html {
 .med-col1 {
   display: grid;
   grid-template-rows: repeat(2 min-content);
-
 }
 
 .med-col2 {
@@ -553,58 +486,43 @@ html {
   grid-template-rows: repeat(3 min-content);
 }
 
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-/* Scroll image grid animation */
-#track-container {
-  background-image: url(Pictures/srhbzhzdhxfh.jpg);
-  height: 100vh;
-  overflow: hidden;
-  background-size: cover;
-}
+/* RSVP */
 
-#image-track>.image {
-  width: 30vmin;
-  height: 46vmin;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 10px;
-
-}
-
-#image-track {
+.rsvp-main-container {
   display: flex;
-  gap: 4vmin;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(0%, -50%);
-
+  justify-content: center;
+  margin-top: 5%;
 }
 
+.rsvp-secondary-container {
+  display: flex;
+  justify-content: center;
+  width: 1075px;
+  margin: 2%;
+}
+
+.rsvp-couple-image {
+  width: 500px;
+  margin: 2%;
+}
+
+.rsvp-background-image {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.qr-code-image {
+  width: 200px;
+}
+
+.qr-code-message {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  color: darkgoldenrod;
+}
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 */
-
-/* Rsvp page */
-#main-background {
-  background-image: url(Pictures/gold\ texture.jpg);
-  background-size: cover;
-  height: 850px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#qr-code-background {
-  background-image: url(Pictures/rsvp-barcode-background.jpg);
-  background-size: cover;
-  height: 750px;
-  width: 750px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#qr-code-main {
-  height: 400px;
-  width: 400px;
-}

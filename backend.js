@@ -1,20 +1,19 @@
-
 // Coding for navigation bar while scrolling{
 
 // Takes the current scrolling position and stores it in a variable
 var prevScrollPos = window.pageYOffset;
-const defaultScrollPos = window.pageYOffset;
+const defaultScrollPos = 50;
 
 // Function to compair the scrolling positions
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
 
-  if (prevScrollPos > defaultScrollPos + 50) {
+  if (prevScrollPos > defaultScrollPos) {
+    document.querySelector(".nav-bar").classList.add("contaner2-dimmer");
     document.querySelector(".nav-bar").classList.add("visible");
-
   } else {
+    document.querySelector(".nav-bar").classList.remove("contaner2-dimmer");
     document.querySelector(".nav-bar").classList.remove("visible");
-
   }
 
   prevScrollPos = currentScrollPos;
@@ -45,31 +44,26 @@ function updateCountdown() {
 
   // Calculate the days, hours, minutes, and seconds remaining
   var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var hours = Math.floor(
+    (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  );
   var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
-  // Display the countdown in the grid 
+  // Display the countdown in the grid
   // Display days in column 1
-  document.getElementById("countdown-days").innerHTML =
-    days + "<br> Days "
+  document.getElementById("countdown-days").innerHTML = days + "<br> Days ";
 
   // Display days in column 1
-  document.getElementById("countdown-hours").innerHTML =
-    hours + "<br> Hours "
+  document.getElementById("countdown-hours").innerHTML = hours + "<br> Hours ";
 
   // Display days in column 1
   document.getElementById("countdown-minutes").innerHTML =
-    minutes + "<br> Minutes "
+    minutes + "<br> Minutes ";
 
   // Display days in column 1
   document.getElementById("countdown-seconds").innerHTML =
-    seconds + "<br> Seconds "
-
-
+    seconds + "<br> Seconds ";
 }
 
 // ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
