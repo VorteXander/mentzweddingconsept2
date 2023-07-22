@@ -133,11 +133,12 @@ html {
   display: flex;
   justify-content: center;
   gap: 15px;
-  font-size: 10px;
+  font-size: 15px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   list-style-type: none;
   padding-bottom: 4%;
   z-index: 10;
+  font-weight: bold;
 }
 
 .nav-bar {
@@ -182,7 +183,7 @@ html {
 #welcome-section {
   background-image: url(Pictures/srhbzhzdhxfh.jpg);
   background-size: cover;
-  height: 600px;
+  height: 450px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   text-shadow: 1px 1px 1px #000;
@@ -205,12 +206,23 @@ html {
 
 .reg-titlep {
   align-self: center;
-  font-size: 40px;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.reg-date {
+  font-size: 15.5px;
   font-weight: lighter;
 }
 
 .second-heading-MentzToBe {
-  font-size: 21.5px;
+  font-size: 15.5px;
+  font-weight: lighter;
+}
+
+.reg-RSVP-Beforep {
+  font-weight: lighter;
+  font-size: 15.5px;
 }
 
 #reg-buttonb {

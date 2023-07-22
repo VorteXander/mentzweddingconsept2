@@ -1,7 +1,7 @@
 // Coding for navigation bar while scrolling{
 
 // Takes the current scrolling position and stores it in a variable
-var prevScrollPos = window.pageYOffset;
+var prevScrollPos = Window.pageYOffset;
 const defaultScrollPos = 0;
 
 // Function to compair the scrolling positions
