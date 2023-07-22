@@ -2,7 +2,7 @@
 
 // Takes the current scrolling position and stores it in a variable
 var prevScrollPos = Window.pageYOffset;
-const defaultScrollPos = 0;
+const defaultScrollPos = 10;
 
 // Function to compair the scrolling positions
 window.onscroll = function () {
@@ -11,7 +11,8 @@ window.onscroll = function () {
   if (prevScrollPos > defaultScrollPos) {
     document.querySelector(".nav-bar").classList.add("contaner2-dimmer");
     document.querySelector(".nav-bar").classList.add("visible");
-  } else {
+  }
+  if (prevScrollPos <= defaultScrollPos) {
     document.querySelector(".nav-bar").classList.remove("contaner2-dimmer");
     document.querySelector(".nav-bar").classList.remove("visible");
   }
