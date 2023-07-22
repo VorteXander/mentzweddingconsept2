@@ -73,7 +73,7 @@ html {
 
 #heading-column1 {
   text-align: right;
-  font-size: 35px;
+  font-size: 25px;
   opacity: 0;
   animation: slideInLeft 1s ease-in forwards;
   font-family: "poppy-shower";
@@ -82,7 +82,7 @@ html {
 
 #heading-column2 {
   text-align: left;
-  font-size: 35px;
+  font-size: 25px;
   opacity: 0;
   animation: slideInRight 1s ease-in forwards;
   font-family: "poppy-shower";
@@ -90,12 +90,12 @@ html {
 }
 
 .heading-surname {
-  font-size: 35px;
+  font-size: 25px;
   font-weight: lighter;
 }
 
 #and-sign {
-  font-size: 50px;
+  font-size: 40px;
   color: darkgoldenrod;
   text-align: center;
   font-family: "poppy-shower";
@@ -132,8 +132,8 @@ html {
 .menu-grid {
   display: flex;
   justify-content: center;
-  gap: 40px;
-  font-size: 15px;
+  gap: 15px;
+  font-size: 10px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   list-style-type: none;
   padding-bottom: 4%;
@@ -280,12 +280,13 @@ html {
 
 #countdown-grid {
   display: flex;
-  font-family: silenter;
-  gap: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: lighter;
+  gap: 5px;
 }
 
 #countdown-container {
-  height: 180px;
+  height: 120px;
   background-color: rgb(99, 72, 6);
   display: flex;
   justify-content: center;
@@ -293,11 +294,11 @@ html {
 }
 
 .countdown-columns {
-  font-size: 20px;
+  font-size: 12px;
   color: white;
   background-color: rgb(126, 92, 8);
-  height: 110px;
-  width: 110px;
+  height: 70px;
+  width: 70px;
   border-radius: 100%;
   text-align: center;
   box-shadow: 0px 10px 10px black;
@@ -371,8 +372,8 @@ html {
 }
 
 #story-picture {
-  width: 200px;
-  height: 280px;
+  width: 150px;
+  height: 230px;
   margin: 2%;
 }
 
@@ -394,13 +395,13 @@ html {
   align-items: center;
 }
 .information-text1 {
-  font-size: 30px;
+  font-size: 20px;
   font-family: silenter;
   font-weight: bolder;
 }
 
 .information-text2 {
-  font-size: 15px;
+  font-size: 10px;
   font-family: sans-serif;
   margin-top: 2%;
   margin-bottom: 2%;
@@ -412,10 +413,12 @@ html {
   text-align: left;
   margin-bottom: 10%;
   font-weight: bolder;
+  font-size: 10px;
 }
 
 .guesthouses {
   text-align: left;
+  font-size: 10px;
 }
 
 .link-highlight {

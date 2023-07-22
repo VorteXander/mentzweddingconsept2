@@ -2,7 +2,7 @@
 
 // Takes the current scrolling position and stores it in a variable
 var prevScrollPos = window.pageYOffset;
-const defaultScrollPos = 50;
+const defaultScrollPos = 0;
 
 // Function to compair the scrolling positions
 window.onscroll = function () {
