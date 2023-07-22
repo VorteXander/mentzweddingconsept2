@@ -67,11 +67,13 @@ html {
 #container1 {
   display: flex;
   justify-content: center;
+  margin: 2%;
+  padding-bottom: 4%;
 }
 
 #heading-column1 {
   text-align: right;
-  font-size: 50px;
+  font-size: 35px;
   opacity: 0;
   animation: slideInLeft 1s ease-in forwards;
   font-family: "poppy-shower";
@@ -80,7 +82,7 @@ html {
 
 #heading-column2 {
   text-align: left;
-  font-size: 50px;
+  font-size: 35px;
   opacity: 0;
   animation: slideInRight 1s ease-in forwards;
   font-family: "poppy-shower";
@@ -88,11 +90,12 @@ html {
 }
 
 .heading-surname {
-  font-size: 50px;
+  font-size: 35px;
+  font-weight: lighter;
 }
 
 #and-sign {
-  font-size: 70px;
+  font-size: 50px;
   color: darkgoldenrod;
   text-align: center;
   font-family: "poppy-shower";
@@ -129,11 +132,11 @@ html {
 .menu-grid {
   display: flex;
   justify-content: center;
-  gap: 70px;
+  gap: 40px;
   font-size: 15px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   list-style-type: none;
-  padding-bottom: 2%;
+  padding-bottom: 4%;
   z-index: 10;
 }
 
@@ -179,7 +182,7 @@ html {
 #welcome-section {
   background-image: url(Pictures/srhbzhzdhxfh.jpg);
   background-size: cover;
-  height: 700px;
+  height: 600px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   text-shadow: 1px 1px 1px #000;
@@ -276,10 +279,9 @@ html {
 /* Countdown */
 
 #countdown-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
   font-family: silenter;
-  gap: 150px;
+  gap: 15px;
 }
 
 #countdown-container {
@@ -294,12 +296,14 @@ html {
   font-size: 20px;
   color: white;
   background-color: rgb(126, 92, 8);
-  height: 130px;
-  width: 130px;
+  height: 110px;
+  width: 110px;
   border-radius: 100%;
   text-align: center;
-  padding-top: 25px;
   box-shadow: 0px 10px 10px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------ */
@@ -341,6 +345,11 @@ html {
 
 /* Our story */
 
+.image-container {
+  display: flex;
+  flex-direction: column;
+}
+
 #our-story-container {
   display: flex;
   align-content: center;
@@ -348,7 +357,7 @@ html {
 }
 
 #our-story-heading {
-  font-size: 45px;
+  font-size: 35px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
   text-align: left;
@@ -358,11 +367,12 @@ html {
 
 #our-story-section {
   width: 500px;
-  margin: 2%;
+  margin: 4%;
 }
 
 #story-picture {
-  width: 500px;
+  width: 200px;
+  height: 280px;
   margin: 2%;
 }
 
@@ -376,6 +386,8 @@ html {
 /* Information */
 .information {
   margin: 5%;
+  margin-top: 12%;
+  margin-bottom: 12%;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -385,7 +397,6 @@ html {
   font-size: 30px;
   font-family: silenter;
   font-weight: bolder;
-  /* color: darkgoldenrod; */
 }
 
 .information-text2 {
@@ -414,7 +425,7 @@ html {
 /* ------------------------------------------------------------------------------------------------------------------------ */
 /* Gallery */
 
-.gallery-heading-container {
+#gallery-heading-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -457,7 +468,7 @@ html {
 
 .gallery-background-container {
   display: grid;
-  grid-template-columns: 24% 24% 24% 24%;
+  grid-template-columns: 44% 44%;
   gap: 3px;
   justify-content: center;
   align-items: center;
@@ -476,53 +487,21 @@ html {
   grid-template-rows: repeat(3 min-content);
 }
 
-.med-col3 {
-  display: grid;
-  grid-template-rows: repeat(2 min-content);
-}
-
-.med-col4 {
-  display: grid;
-  grid-template-rows: repeat(3 min-content);
-}
-
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-
-/* RSVP */
-
-.rsvp-main-container {
+/* Footer */
+footer {
   display: flex;
   justify-content: center;
-  margin-top: 5%;
+  align-items: center;
+  background-color: rgb(99, 72, 6);
+  height: 150px;
 }
-
-.rsvp-secondary-container {
-  display: flex;
-  justify-content: center;
-  width: 1075px;
-  margin: 2%;
-}
-
-.rsvp-couple-image {
-  width: 500px;
-  margin: 2%;
-}
-
-.rsvp-background-image {
-  width: 300px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.qr-code-image {
-  width: 200px;
-}
-
-.qr-code-message {
-  font-family: Arial, Helvetica, sans-serif;
+footer p {
+  color: white;
+  font-size: 15px;
   font-weight: lighter;
-  color: darkgoldenrod;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 */
