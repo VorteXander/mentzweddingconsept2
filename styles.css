@@ -138,8 +138,8 @@ html {
 .menu-grid {
   display: flex;
   justify-content: center;
-  gap: 70px;
-  font-size: 15px;
+  gap: 3%;
+  font-size: 13px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   list-style-type: none;
   padding-bottom: 2%;
