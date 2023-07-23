@@ -111,9 +111,14 @@ html {
   align-items: center;
 }
 
-.container2-dimmer {
-  background-color: rgb(0, 0, 0, 0.5);
-  color: white;
+.navbar-dimmer {
+  background-color: rgba(99, 72, 6, 0.8);
+  height: 4%;
+}
+
+.navbar-font {
+  color: rgb(255, 255, 255);
+  padding-top: 0.5%;
 }
 
 /* Navbar visibility while scrolling */
@@ -123,6 +128,7 @@ html {
   width: 100%;
   padding: 10px;
   transition-duration: 0.5s;
+  z-index: 999999;
 }
 
 .nav-bar.visible {
@@ -132,19 +138,12 @@ html {
 .menu-grid {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 70px;
   font-size: 15px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   list-style-type: none;
-  padding-bottom: 4%;
+  padding-bottom: 2%;
   z-index: 10;
-  font-weight: bold;
-}
-
-.nav-bar {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
 }
 
 .nav-bar li {
@@ -153,9 +152,9 @@ html {
 
 .nav-bar a {
   text-decoration: none;
-  color: darkgoldenrod;
   padding-left: 10px;
   padding-right: 10px;
+  color: darkgoldenrod;
 }
 
 /* Hover animation */
