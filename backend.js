@@ -9,12 +9,12 @@ window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
 
   if (prevScrollPos > defaultScrollPos) {
-    document.querySelector(".nav-bar").classList.add("contaner2-dimmer");
     document.querySelector(".nav-bar").classList.add("visible");
+    document.querySelector(".nav-bar").classList.add("container2-dimmer");
   }
   if (prevScrollPos <= defaultScrollPos) {
-    document.querySelector(".nav-bar").classList.remove("contaner2-dimmer");
     document.querySelector(".nav-bar").classList.remove("visible");
+    document.querySelector(".nav-bar").classList.remove("container2-dimmer");
   }
 
   prevScrollPos = currentScrollPos;

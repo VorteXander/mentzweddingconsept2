@@ -121,8 +121,8 @@ html {
 }
 
 .container2-dimmer {
-  background-color: rgb(0, 0, 0, 0.5);
-  color: white;
+  background-color: rgb(126, 92, 8, 0.5);
+  height: 3%;
 }
 
 /* Navbar visibility while scrolling */
