@@ -62,15 +62,10 @@ html {
 
 .heading-Lovers-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 45% 10% 45%;
   /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   padding-bottom: 2%;
-}
-
-.heading-flex {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
+  width: 100%;
 }
 
 #container1 {
@@ -81,21 +76,24 @@ html {
 }
 
 .heading-column1 {
-  text-align: right;
-  font-size: 25px;
+  font-size: 18px;
   opacity: 0;
   animation: slideInLeft 1s ease-in forwards;
   font-family: "Poppins";
-  font-weight: lighter;
+  font-weight: 500;
+}
+
+.heading-position {
+  text-align: right;
 }
 
 .heading-column2 {
   text-align: left;
-  font-size: 25px;
+  font-size: 18px;
   opacity: 0;
   animation: slideInRight 1s ease-in forwards;
   font-family: "Poppins";
-  font-weight: lighter;
+  font-weight: 500;
 }
 
 .heading-surname {
@@ -394,7 +392,7 @@ html {
 #our-story-paragraph {
   color: #000;
   font-family: "Poppins";
-  font-size: 15px;
+  font-size: 13px;
   text-align: left;
   font-weight: lighter;
 }
