@@ -1,4 +1,7 @@
 /* Default */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -64,6 +67,12 @@ html {
   padding-bottom: 2%;
 }
 
+.heading-flex {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
 #container1 {
   display: flex;
   justify-content: center;
@@ -71,26 +80,27 @@ html {
   padding-bottom: 4%;
 }
 
-#heading-column1 {
+.heading-column1 {
   text-align: right;
   font-size: 25px;
   opacity: 0;
   animation: slideInLeft 1s ease-in forwards;
-  font-family: "poppy-shower";
+  font-family: "Poppins";
   font-weight: lighter;
 }
 
-#heading-column2 {
+.heading-column2 {
   text-align: left;
   font-size: 25px;
   opacity: 0;
   animation: slideInRight 1s ease-in forwards;
-  font-family: "poppy-shower";
+  font-family: "Poppins";
   font-weight: lighter;
 }
 
 .heading-surname {
-  font-size: 25px;
+  font-size: 15px;
+  font-family: "Poppins";
   font-weight: lighter;
 }
 
@@ -111,14 +121,9 @@ html {
   align-items: center;
 }
 
-.navbar-dimmer {
-  background-color: rgba(99, 72, 6, 0.8);
-  height: 4%;
-}
-
-.navbar-font {
-  color: rgb(255, 255, 255);
-  padding-top: 0.5%;
+.container2-dimmer {
+  background-color: rgb(0, 0, 0, 0.5);
+  color: white;
 }
 
 /* Navbar visibility while scrolling */
@@ -128,7 +133,6 @@ html {
   width: 100%;
   padding: 10px;
   transition-duration: 0.5s;
-  z-index: 999999;
 }
 
 .nav-bar.visible {
@@ -138,12 +142,19 @@ html {
 .menu-grid {
   display: flex;
   justify-content: center;
-  gap: 3%;
+  gap: 15px;
   font-size: 15px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Poppins";
   list-style-type: none;
   padding-bottom: 4%;
   z-index: 10;
+  font-weight: bold;
+}
+
+.nav-bar {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-bar li {
@@ -152,9 +163,9 @@ html {
 
 .nav-bar a {
   text-decoration: none;
+  color: darkgoldenrod;
   padding-left: 10px;
   padding-right: 10px;
-  color: darkgoldenrod;
 }
 
 /* Hover animation */
@@ -184,7 +195,7 @@ html {
   background-size: cover;
   height: 450px;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins";
   text-shadow: 1px 1px 1px #000;
   font-size: 25px;
   display: flex;
@@ -285,7 +296,7 @@ html {
 /* Countdown */
 
 #countdown-grid {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Poppins";
   font-weight: lighter;
   height: 120px;
   background-color: rgb(99, 72, 6);
@@ -333,13 +344,13 @@ html {
 #sheSaidYes {
   color: white;
   font-size: 45px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins";
   font-weight: lighter;
 }
 
 #dateOfAnswer {
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins";
   font-weight: lighter;
   font-size: 12px;
   font-weight: lighter;
@@ -362,7 +373,7 @@ html {
 
 #our-story-heading {
   font-size: 35px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins";
   font-weight: lighter;
   text-align: left;
   margin-top: 10%;
@@ -382,7 +393,7 @@ html {
 
 #our-story-paragraph {
   color: #000;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins";
   font-size: 15px;
   text-align: left;
   font-weight: lighter;
@@ -400,24 +411,35 @@ html {
 }
 .information-text1 {
   font-size: 20px;
-  font-family: silenter;
+  font-family: "Poppins";
   font-weight: bolder;
+  margin-top: 15px;
 }
 
 .information-text2 {
-  font-size: 10px;
-  font-family: sans-serif;
+  font-size: 12px;
+  font-family: "Poppins";
   margin-top: 2%;
   margin-bottom: 2%;
   text-align: center;
   font-weight: bolder;
+  margin-bottom: 5px;
+}
+
+.information .information-text1 {
+  font-weight: 200;
+}
+
+.information .information-text2 {
+  font-weight: 100;
 }
 
 .bank-details {
-  text-align: left;
   margin-bottom: 10%;
-  font-weight: bolder;
-  font-size: 10px;
+  font-weight: 100;
+  font-size: 12px;
+  text-align: center;
+  font-family: "Poppins";
 }
 
 .guesthouses {
@@ -507,7 +529,7 @@ footer p {
   color: white;
   font-size: 15px;
   font-weight: lighter;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Poppins";
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
