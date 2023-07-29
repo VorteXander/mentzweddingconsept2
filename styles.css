@@ -122,7 +122,11 @@ html {
 
 .container2-dimmer {
   background-color: rgb(126, 92, 8, 0.5);
-  height: 3%;
+}
+
+.menu-grid-padding {
+  color: white;
+  padding-top: 4%;
 }
 
 /* Navbar visibility while scrolling */

@@ -11,10 +11,12 @@ window.onscroll = function () {
   if (prevScrollPos > defaultScrollPos) {
     document.querySelector(".nav-bar").classList.add("visible");
     document.querySelector(".nav-bar").classList.add("container2-dimmer");
+    document.querySelector(".menu-grid").classList.add("menu-grid-padding");
   }
   if (prevScrollPos <= defaultScrollPos) {
     document.querySelector(".nav-bar").classList.remove("visible");
     document.querySelector(".nav-bar").classList.remove("container2-dimmer");
+    document.querySelector(".menu-grid").classList.remove("menu-grid-padding");
   }
 
   prevScrollPos = currentScrollPos;
